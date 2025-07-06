@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains various Rainmeter skins designed to enhance your desktop experience. Each skin is tailored to provide functionality and aesthetic appeal. These skins started with the base skin distributed with Rainmeter and I've been modifying to my tastes.
+This repository contains various [Rainmeter](https://www.rainmeter.net/) skins designed to enhance your desktop experience. Each skin is tailored to provide functionality and aesthetic appeal. These skins started with the base skin distributed with Rainmeter and I've been modifying to my tastes.
 
 ## Structure
 
