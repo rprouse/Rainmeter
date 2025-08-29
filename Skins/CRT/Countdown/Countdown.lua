@@ -3,14 +3,25 @@ function Initialize()
     targetYear = 2025
     targetMonth = 10
     targetDay = 16
+    targetHour = 11
+    targetMinute = 0
+    targetSecond = 0
 end
 
 function Update()
     -- Current time
     local now = os.time()
     -- Target time
-    local targetTime = os.time({year=targetYear, month=targetMonth, day=targetDay, hour=0, min=0, sec=0})
+    local targetTime = os.time({year=targetYear, month=targetMonth, day=targetDay, hour=targetHour, min=targetMinute, sec=targetSecond})
     -- Days remaining
     local days = math.floor((targetTime - now) / 86400)
-    return days
+    -- Hours remaining
+    local hours = math.floor((targetTime - now) / 3600) % 24
+    -- Minutes remaining
+    local minutes = math.floor((targetTime - now) / 60) % 60
+    -- Seconds remaining
+    local seconds = (targetTime - now) % 60
+
+    -- Return formatted string
+    return string.format("%02dd %02dH %02dm %02ds", days, hours, minutes, seconds)
 end
