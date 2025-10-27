@@ -1,9 +1,9 @@
 function Initialize()
     -- Get target date from the INI
     targetYear = 2025
-    targetMonth = 10
-    targetDay = 16
-    targetHour = 11
+    targetMonth = 12
+    targetDay = 5
+    targetHour = 9
     targetMinute = 0
     targetSecond = 0
 end
